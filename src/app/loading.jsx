@@ -1,0 +1,12 @@
+import React from 'react';
+
+const loading = () => {
+    return (
+        <div className='flex items-center justify-center h-screen'>
+            <span className="loading loading-ring loading-7xl "></span>
+
+        </div>
+    );
+};
+
+export default loading;
