@@ -12,7 +12,7 @@ It displays food items, gallery, menu pages, and contact system with API integra
 
 🚀 Live Demo
 
-https://next-js-restaurant-web.vercel.app/ ,[https://next-js-restaurant-web.vercel.app/]
+[Visit Website](https://next-js-restaurant-web.vercel.app/)
 
 
 🛠️ Tech Stack
