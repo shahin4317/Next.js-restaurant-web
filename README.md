@@ -12,11 +12,8 @@ It displays food items, gallery, menu pages, and contact system with API integra
 
 🚀 Live Demo
 
-https://your-live-link.com
+https://next-js-restaurant-web.vercel.app/ ,[https://next-js-restaurant-web.vercel.app/]
 
-📸 Screenshot
-
-(Add your project screenshot here)
 
 🛠️ Tech Stack
 Next.js
@@ -47,9 +44,6 @@ components/
  FoodsCard/
  GalleryCard/
 
-🔌 API Used
-
-https://phi-lab-server.vercel.app/api/v1/lab/foods
 
 ⚙️ Installation
 
