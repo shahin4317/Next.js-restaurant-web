@@ -5,13 +5,73 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
+🍃 Leaf & Plate
+
+A modern restaurant website built with Next.js, Tailwind CSS, and DaisyUI.
+It displays food items, gallery, menu pages, and contact system with API integration.
+
+🚀 Live Demo
+
+https://your-live-link.com
+
+📸 Screenshot
+
+(Add your project screenshot here)
+
+🛠️ Tech Stack
+Next.js
+React
+Tailwind CSS
+DaisyUI
+REST API
+✨ Features
+Fully responsive design
+Food menu with API data
+Dynamic food details page
+Modern image gallery
+Contact form UI
+Active navbar highlight
+Loading spinner support
+📂 Project Structure
+
+app/
+ page.jsx
+ menu/
+ gallery/
+ about/
+ contact/
+
+components/
+ Navbar/
+ Footer/
+ FoodsCard/
+ GalleryCard/
+
+🔌 API Used
+
+https://phi-lab-server.vercel.app/api/v1/lab/foods
+
+⚙️ Installation
+
+git clone https://github.com/your-username/leaf-and-plate.git
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+📌 Pages
+Home
+Menu
+Gallery
+About
+Contact
+Book Table
+Food Details
+👨‍💻 Developer
+
+Shahin
+
+📄 License
+
+This project is for learning purpose.
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
