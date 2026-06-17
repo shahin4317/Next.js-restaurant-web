@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const FoodDetailsPage = async ({ params }) => {
@@ -21,41 +22,13 @@ const FoodDetailsPage = async ({ params }) => {
                             alt={food.dish_name}
                             width={300}
                             height={200}
-                            
-                            
+
+
                         />
                     </div>
 
                     {/* INFO */}
-                    <div className="p-8 flex flex-col justify-center">
 
-                        <span className="w-fit bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
-                            {food.category}
-                        </span>
-
-                        <h1 className="text-3xl font-bold text-gray-800 mt-4 leading-tight">
-                            {food.dish_name}
-                        </h1>
-
-                        <p className="text-gray-500 mt-2">
-                            {food.cuisine}
-                        </p>
-
-                        <div className="flex items-center gap-4 mt-5">
-                            <p className="text-yellow-500 font-semibold text-black">
-                                ⭐ {food.rating}
-                            </p>
-
-                            <p className="text-green-700 text-2xl font-bold">
-                                ৳ {food.price}
-                            </p>
-                        </div>
-
-                        <button className="mt-6 bg-green-700 hover:bg-green-800 text-white py-3 rounded-xl font-semibold transition">
-                            Order Now
-                        </button>
-
-                    </div>
                 </div>
 
                 {/* INGREDIENTS */}
@@ -129,6 +102,40 @@ const FoodDetailsPage = async ({ params }) => {
                             <li key={i}>{step}</li>
                         ))}
                     </ol>
+
+                </div>
+                <div className="p-8 flex flex-col justify-center">
+
+                    <span className="w-fit bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+                        {food.category}
+                    </span>
+
+                    <h1 className="text-3xl font-bold text-gray-800 mt-4 leading-tight">
+                        {food.dish_name}
+                    </h1>
+
+                    <p className="text-gray-500 mt-2">
+                        {food.cuisine}
+                    </p>
+
+                    <div className="flex items-center gap-4 mt-5">
+                        <p className="text-yellow-500 font-semibold text-black">
+                            ⭐ {food.rating}
+                        </p>
+
+                        <p className="text-green-700 text-2xl font-bold">
+                            ৳ {food.price}
+                        </p>
+                    </div>
+                    <div>
+
+                        <button className="bg-green-800 hover:bg-green-900 text-white px-3 py-2 rounded-xl transition">
+                            Order Now
+                        </button>
+                        <Link href={'/Menu'}><button className="badge badge-outline text-black p-4 ml-4">Choess Other</button></Link>
+
+                    </div>
+
 
                 </div>
 

@@ -1,14 +1,17 @@
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 const NavbarPage = () => {
+    const pathName = usePathname();
     const links = <>
-        <li><Link href='/'>Home</Link></li>
-        <li><Link href='/Menu'>Menu</Link></li>
-        <li><Link href='/about'>About</Link></li>
-        <li><Link href='/gallery'>Gallery</Link></li>
-        <li><Link href='/contact'>Contact</Link></li>
+        <li><Link className={pathName === '/'? 'bg-green-900': ''} href='/'>Home </Link></li>
+        <li><Link  className={pathName === '/Menu'? 'bg-green-900': ''} href='/Menu'>Menu</Link></li>
+        <li><Link  className={pathName === '/about'? 'bg-green-900': ''} href='/about'>About</Link></li>
+        <li><Link className={pathName === '/gallery'? 'bg-green-900': ''} href='/gallery'>Gallery</Link></li>
+        <li><Link className={pathName === '/contact'? 'bg-green-900': ''} href='/contact'>Contact</Link></li>
 
     </>
     return (
@@ -42,7 +45,7 @@ const NavbarPage = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link href={'/booktable'}><button className="btn bg-green-900">Book a Table</button></Link>
+                    <Link  href={'/booktable'}><button className="btn bg-green-900">Book a Table</button></Link>
                 </div>
             </div>
         </div>

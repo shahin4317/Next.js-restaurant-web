@@ -2,7 +2,7 @@ import React from 'react';
 
 const BookTablePage = () => {
     return (
-        <div className="min-h-screen bg-green-50 pt-15">
+        <div className="min-h-screen bg-green-50 ">
             {/* Hero Section */}
             <section className="bg-green-900 text-white py-20">
                 <div className="max-w-6xl mx-auto px-5 text-center">

@@ -49,7 +49,7 @@ const FooterPage = () => {
                         </h3>
 
                         <div className="space-y-3 text-gray-300">
-                            <p>📍 Tacnical Road,Sylhet</p>
+                            <p>📍 Tachnical Road,Sylhet</p>
                             <p>📞 +880 1850840896</p>
                             <p>✉️ shahinalam4317@gmail.com.com</p>
 
